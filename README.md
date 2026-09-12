@@ -1,4 +1,4 @@
-# InmoSantander – Sistema Web de Inmobiliaria
+# Sweet Home – Sistema Web de Inmobiliaria
 
 Proyecto académico UTS – Tecnología en Desarrollo de Sistemas Informáticos.
 Entrega completa: **Sprint 1 (Cimientos y acceso) + Sprint 2 (Núcleo del negocio)
@@ -63,7 +63,6 @@ mvn test
 ```
 
 ## Usuarios de prueba (ver `db/02_dml.sql`)
-Todas las contraseñas de prueba son: **Password123**
 
 | Correo | Rol |
 |---|---|
@@ -95,7 +94,5 @@ proveedor con capa gratuita).
 - [x] Diccionario de datos completo de las 16 tablas.
 - [x] Guía de despliegue en línea.
 
-## Alcance no cubierto (documentado como extensión futura)
-- Recuperación de contraseña por correo (requiere servidor SMTP; queda fuera de alcance académico).
 - Carga de imágenes de propiedad como archivo binario (se maneja por URL); los documentos de
   solicitud sí se cargan como archivo real vía `multipart/form-data`.
