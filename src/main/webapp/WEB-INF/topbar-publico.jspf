@@ -1,0 +1,36 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%-- Barra de navegación pública, reutilizada en index.jsp, catalogo.jsp y propiedad-detalle.jsp.
+     Si hay sesión activa, muestra el saludo y un acceso directo al panel del rol;
+     si no, muestra los enlaces de inicio de sesión / registro (rol Visitante). --%>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-brand-custom">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="<%= request.getContextPath() %>/index.jsp">Sweet Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPublico">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navPublico">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="<%= request.getContextPath() %>/catalogo">Catálogo</a></li>
+                <%
+                    Object idUsuarioSesion = (session != null) ? session.getAttribute("idUsuario") : null;
+                    if (idUsuarioSesion != null) {
+                        String rolPrincipal = (String) session.getAttribute("rolPrincipal");
+                        String destinoPanel = "/dashboard/cliente.jsp";
+                        if ("ADMINISTRADOR".equals(rolPrincipal)) destinoPanel = "/dashboard/admin.jsp";
+                        else if ("INMOBILIARIA".equals(rolPrincipal)) destinoPanel = "/dashboard/inmobiliaria.jsp";
+                %>
+                    <li class="nav-item"><span class="nav-link text-white-50">Hola, <%= session.getAttribute("nombres") %></span></li>
+                    <li class="nav-item"><a class="btn btn-outline-light btn-sm ms-lg-2" href="<%= request.getContextPath() + destinoPanel %>">Mi panel</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-light btn-sm ms-lg-2" href="<%= request.getContextPath() %>/logout">Salir</a></li>
+                <%
+                    } else {
+                %>
+                    <li class="nav-item"><a class="nav-link" href="<%= request.getContextPath() %>/login">Iniciar sesión</a></li>
+                    <li class="nav-item"><a class="btn btn-primary btn-sm ms-lg-2" href="<%= request.getContextPath() %>/registro">Registrarse</a></li>
+                <%
+                    }
+                %>
+            </ul>
+        </div>
+    </div>
+</nav>
