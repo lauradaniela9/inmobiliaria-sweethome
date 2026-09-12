@@ -1,8 +1,7 @@
 # Sweet Home – Sistema Web de Inmobiliaria
 
 Proyecto académico UTS – Tecnología en Desarrollo de Sistemas Informáticos.
-Entrega completa: **Sprint 1 (Cimientos y acceso) + Sprint 2 (Núcleo del negocio)
-+ Sprint 3 (Operación y cierre)**.
+Entrega completa: **Sprint 1 (Cimientos y acceso) + Sprint 2 (Núcleo del negocio) + Sprint 3 (Operación y cierre)**.
 
 Java EE (JSP) + JDBC + MySQL, arquitectura MVC con Servlets como controladores,
 Bootstrap 5 para el frontend responsivo y Apache Tomcat como servidor de aplicaciones.
