@@ -26,7 +26,7 @@ Acceso a datos (DAO)              → *DAO.java (UsuarioDAO, PropiedadDAO, CitaD
 Conexión (JDBC)                   → ConexionBD.java + db.properties
    │
    ▼
-Base de datos (MySQL/MariaDB)     → db_inmobiliaria
+Base de datos (MySQL)     → db_inmobiliaria
 ```
 
 **Puntos clave de diseño:**
