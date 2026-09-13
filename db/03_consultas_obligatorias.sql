@@ -33,10 +33,11 @@ FROM propiedad p
 LEFT JOIN cita c ON c.id_propiedad = p.id_propiedad
 WHERE c.id_cita IS NULL;
 
--- 5. GROUP BY + HAVING: propiedades por ciudad y estado
-SELECT c.nombre AS ciudad, COUNT(*) AS total_propiedades
+-- 5. GROUP BY + HAVING: propiedades por ciudad y estado (mismo criterio que usa
+--    ReporteDAO.propiedadesPorCiudadYEstado(), que alimenta el reporte del administrador)
+SELECT c.nombre AS ciudad, p.estado, COUNT(*) AS total_propiedades
 FROM propiedad p
 INNER JOIN ciudad c ON c.id_ciudad = p.id_ciudad
-GROUP BY c.id_ciudad, c.nombre
+GROUP BY c.id_ciudad, c.nombre, p.estado
 HAVING COUNT(*) >= 1
-ORDER BY total_propiedades DESC;
+ORDER BY c.nombre, total_propiedades DESC;
