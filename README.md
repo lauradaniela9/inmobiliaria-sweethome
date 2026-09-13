@@ -39,6 +39,7 @@ Base de datos (MySQL)     → db_inmobiliaria
 
 | Rol | Qué puede hacer |
 |---|---|
+| **Visitante** | Navega la landing page, consulta el catálogo público y el detalle de las propiedades. No accede a los paneles internos ni ve los datos completos de contacto de la inmobiliaria. |
 | **Administrador** | Asignar/quitar roles, ver reportes (propiedades por ciudad y estado, solicitudes por inmobiliaria), desbloquear cuentas, ver auditoría. |
 | **Inmobiliaria / Agente** | Publicar y editar propiedades (con imágenes y características), gestionar citas, aprobar o rechazar solicitudes de sus propiedades. |
 | **Cliente** | Buscar y filtrar propiedades, marcar favoritos, agendar citas, radicar solicitudes de compra/arriendo y ver su estado. |
