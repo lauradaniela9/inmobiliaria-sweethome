@@ -1,5 +1,5 @@
 # Sprint 3 – Operación y cierre
-**Duración:** 9 – 15 de septiembre de 2026 (7 días)
+**Duración:** 9 – 13 de septiembre de 2026 (7 días)
 
 ---
 
