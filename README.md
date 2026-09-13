@@ -1,6 +1,4 @@
-# Sweet Home – Sistema Web de Inmobiliaria
-
-# Sistema de Gestión Inmobiliaria
+# Sweet Home – Sistema de Gestión Inmobiliaria
 
 Aplicación web para la gestión de un negocio inmobiliario: publicación y búsqueda de propiedades, agendamiento de citas, radicación y aprobación de solicitudes de compra/arriendo, y paneles diferenciados por rol (Administrador, Inmobiliaria/Agente y Cliente).
 
