@@ -16,13 +16,21 @@
 **Estimación:** ~21 puntos.
 
 **Qué había que hacer:**
-- MER y modelo relacional en 3FN.
-- Script DDL (tablas, PK, FK con ON DELETE/ON UPDATE, UNIQUE) y DML con datos de prueba.
-- Conexión JDBC centralizada en `ConexionBD.java` + `db.properties` para no repetir la cadena de conexión en cada DAO.
-- Contraseñas con BCrypt (`PasswordUtil.java`), nada en texto plano.
-- `LoginServlet`: validar credenciales, revisar estado de la cuenta, redirigir según rol.
-- `Filter` que bloquee rutas privadas si no hay sesión o no tiene el rol.
-- `header.jspf` y `topbar-publico.jspf` para no repetir el menú en cada JSP.
+- [x] Diseñar el MER completo (16 entidades, relaciones 1:1, 1:N y N:M).
+- [x] Normalizar el modelo relacional hasta 3FN.
+- [x] Elaborar diccionario de datos.
+- [x] Script DDL con llaves primarias, foráneas, ON DELETE/ON UPDATE y UNIQUE.
+- [x] Script DML con datos de prueba (mínimo 10 registros por tabla principal).
+- [x] Clase `ConexionBD` con cadena de conexión centralizada y configurable (`db.properties`).
+- [x] Landing page responsiva (Bootstrap) con buscador rápido y destacadas.
+- [x] Registro de usuarios con validación de campos, formato de correo y captura del error de correo duplicado (UNIQUE).
+- [x] Cifrado de contraseñas con BCrypt (`PasswordUtil`).
+- [x] Login con `HttpSession`, bloqueo tras intentos fallidos y redirección automática por rol.
+- [x] `AuthFilter` (Servlet Filter) que protege `/dashboard/*` según autenticación y rol.
+- [x] Página de acceso denegado.
+- [x] Tres dashboards mínimos diferenciados (Administrador, Inmobiliaria, Cliente).
+- [x] Registro de eventos clave en tabla `auditoria`.
+
 
 ## 2. Sprint Review
 
