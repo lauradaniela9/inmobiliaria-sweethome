@@ -3,15 +3,13 @@
 **Duración:** 7 días
 **Product Owner:** Docente (Julian Barney Jaimes Rincón)
 **Scrum Master / Development Team:** [tu nombre / equipo]
-**Fecha de inicio:** [completar]
-**Fecha de cierre:** [completar]
+**Fecha de inicio:** [2 de septiembre]
+**Fecha de cierre:** [8 de septiembre]
 
 ## Objetivo del Sprint
 Completar el CRUD de propiedades con imágenes (1:N) y características (N:M),
 el buscador público con filtros reales contra la base de datos, el perfil
-personal (1:1) y los tres paneles diferenciados con funcionalidad real —
-además de cerrar la deuda técnica dejada por la retrospectiva del Sprint 1
-(administración de usuarios/roles).
+personal (1:1) y los tres paneles diferenciados con funcionalidad real
 
 ## Historias de usuario seleccionadas (Sprint Backlog)
 
