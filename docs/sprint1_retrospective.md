@@ -1,18 +1,13 @@
 # Sprint 1 – Retrospective
 
-**Fecha:** [completar]
-
 ## ¿Qué salió bien?
 - Diseñar el modelo de datos completo antes de escribir código evitó retrabajo en las tablas de autenticación.
 - Centralizar la cadena de conexión en `db.properties` facilitó probar en local sin tocar clases Java.
 - Usar BCrypt desde el día 1 evitó tener que migrar contraseñas en texto plano más adelante.
 
 ## ¿Qué se puede mejorar?
-- La estimación de la historia 4 (roles) fue optimista: se subestimó el trabajo de administración de roles vía interfaz.
 - Falta automatizar las pruebas del filtro de acceso (por ahora se probaron manualmente cambiando roles en la sesión).
 - El tablero de seguimiento se actualizó al final del sprint y no día a día.
+- El bloqueo de cuenta por intentos fallidos estaba mal ordenado en el `LoginServlet` — primero validaba la contraseña y después el estado de la cuenta. Entonces si alguien fallaba la contraseña en una cuenta ya bloqueada, el sistema seguía diciendo "correo o contraseña incorrectos" en vez de avisar que estaba bloqueada. Daba la sensación de que se podía seguir intentando sin límite.
 
-## Acciones para el Sprint 2
-1. Mover al inicio del Sprint 2 el CRUD de administración de usuarios/roles pendiente.
-2. Actualizar el tablero (Trello/GitHub Projects) con cada commit relevante, no al cierre del sprint.
-3. Escribir al menos 3 pruebas unitarias sobre `PasswordUtil` y `UsuarioDAO` antes de avanzar con el CRUD de propiedades.
+**Qué mejorar:** revisar el estado de la cuenta ANTES de la contraseña, y probar los casos de error apenas se hace algo nuevo, no solo el camino mas facil.
