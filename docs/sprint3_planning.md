@@ -1,10 +1,11 @@
 # Sprint 3 – Operación y cierre
 
-**Duración:** 7 días
+**Duración:** 5 días
 **Product Owner:** Docente (Julian Barney Jaimes Rincón)
-**Scrum Master / Development Team:** [tu nombre / equipo]
-**Fecha de inicio:** [completar]
-**Fecha de cierre:** [completar]
+**Scrum Master / Equipo de Desarrollo:** [Julieth León y Laura Galvis]
+**Fecha de inicio:** [9 de agosto]
+**Fecha de cierre:** [13 se septiembre]
+
 
 ## Objetivo del Sprint
 Completar el ciclo operativo del negocio (citas, solicitudes, documentos y favoritos),
@@ -34,7 +35,7 @@ despliegue) y validar el sistema de punta a punta antes de la sustentación.
 - [x] `AuditoriaDAO` + `AuditoriaServlet` + `auditoria.jsp`: últimos 100 eventos con `LEFT JOIN` a usuario.
 - [x] Documentación final: diccionario de datos completo (16 tablas), documento de consultas SQL obligatorias, guía de despliegue en línea y actualización del `README.md`.
 
-## Definition of Done (DoD) del Sprint
+## Criterios de Cierre:
 - Un cliente puede agendar una cita y, si otro cliente ya la agendó en el mismo horario para la misma propiedad, recibe un mensaje claro (no una excepción de Java).
 - Un cliente puede radicar una solicitud, adjuntar un documento y consultar el estado de su trámite; la inmobiliaria puede revisar el documento y aprobar/rechazar.
 - El panel de administrador muestra los 4 reportes exigidos (propiedades por ciudad/estado, valor por tipo, citas por estado, solicitudes por inmobiliaria) y la auditoría de los últimos eventos.
