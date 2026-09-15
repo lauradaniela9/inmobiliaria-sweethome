@@ -1,6 +1,7 @@
 # Sprint 1 – Cimientos y acceso
 
 **Duración:** 7 días
+
 **Product Owner:** Docente (Julian Barney Jaimes Rincón)
 **Scrum Master / Equipo de Desarrollo:** [Julieth León y Laura Galvis]
 **Fecha de inicio:** [26 de agosto]
