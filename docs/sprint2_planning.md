@@ -2,7 +2,7 @@
 
 **Duración:** 7 días
 **Product Owner:** Docente (Julian Barney Jaimes Rincón)
-**Scrum Master / Development Team:** [tu nombre / equipo]
+**Scrum Master / Equipo de Desarrollo:**  [Julieth León y Laura Galvis]
 **Fecha de inicio:** [2 de septiembre]
 **Fecha de cierre:** [8 de septiembre]
 
@@ -33,7 +33,7 @@ personal (1:1) y los tres paneles diferenciados con funcionalidad real
 - [x] Landing page (`index.jsp`) conectada a la base de datos real: combos del buscador rápido con los IDs reales y destacadas dinámicas.
 - [x] Los tres dashboards (`admin.jsp`, `cliente.jsp`, `inmobiliaria.jsp`) enlazados a los módulos funcionales reales en lugar de tarjetas estáticas.
 
-## Definition of Done (DoD) del Sprint
+## Criterios de Cierre
 - Un agente puede publicar una propiedad con varias imágenes y varias características desde una sola pantalla, y verla reflejada de inmediato en el catálogo público.
 - Publicar dos propiedades con la misma matrícula muestra un mensaje claro, no una excepción de Java.
 - Un cliente puede filtrar el catálogo por ciudad, tipo, rango de precio y característica, combinando varios filtros a la vez.
