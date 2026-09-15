@@ -39,7 +39,7 @@ contraseñas cifradas y control de acceso por rol validado en el servidor.
 - [x] Tres dashboards mínimos diferenciados (Administrador, Inmobiliaria, Cliente).
 - [x] Registro de eventos clave en tabla `auditoria`.
 
-## Definition of Done (DoD) del Sprint
+## Criterios de Cierre:
 - El script DDL se ejecuta sin errores y crea las 16 tablas con sus restricciones.
 - El script DML inserta los datos de prueba sin violar ninguna restricción.
 - Un visitante puede registrarse, la contraseña queda cifrada en la base de datos (nunca en texto plano).
