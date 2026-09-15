@@ -2,9 +2,9 @@
 
 **Duración:** 7 días
 **Product Owner:** Docente (Julian Barney Jaimes Rincón)
-**Scrum Master / Development Team:** [tu nombre / equipo]
-**Fecha de inicio:** [completar]
-**Fecha de cierre:** [completar]
+**Scrum Master / Equipo de Desarrollo:** [Julieth León y Laura Galvis]
+**Fecha de inicio:** [26 de agosto]
+**Fecha de cierre:** [1 se septiembre]
 
 ## Objetivo del Sprint
 Dejar listos los cimientos técnicos del sistema: el modelo de datos normalizado
